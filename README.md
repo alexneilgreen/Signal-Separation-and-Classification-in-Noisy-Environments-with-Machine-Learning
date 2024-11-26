@@ -1,10 +1,20 @@
-```mermaid
+````mermaid
 graph TD
-    A[main.py] --> B[src/analysis.py]
-    A --> C[src/data_processing.py]
-    A --> D[src/model.py]
-    A --> E[src/training.py]
-    A --> F[src/utils.py]
+    A[main.py]
+
+    subgraph Src Folder
+        B[analysis.py]
+        C[data_processing.py]
+        D[model.py]
+        E[training.py]
+        F[utils.py]
+    end
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
 
     subgraph Project Structure
         G[Data/]
@@ -31,3 +41,4 @@ graph TD
 
     F --> |Contains| FGD[generate_demo]
     ```
+````
