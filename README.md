@@ -2,24 +2,18 @@
 graph TD
     A[main.py]
 
-    subgraph Project Structure
-        B[Data/]
-        C[Figures/]
-        D[Results/]
-        E[src/]
+    A --> B[Data/]
+    A --> C[Figures/]
+    A --> D[Results/]
+    A --> E[src/]
+
+    subgraph src Folder
+        E --> F[analysis.py]
+        E --> G[data_processing.py]
+        E --> H[model.py]
+        E --> I[training.py]
+        E --> J[utils.py]
     end
-
-    A --> B
-    A --> C
-    A --> D
-
-    A --> E
-
-    E --> F[analysis.py]
-    E --> G[data_processing.py]
-    E --> H[model.py]
-    E --> I[training.py]
-    E --> J[utils.py]
 
     F --> |Contains| BFA[ForestRecordingAnalyzer]
     F --> |Contains| BFB[check_and_compare_results]
