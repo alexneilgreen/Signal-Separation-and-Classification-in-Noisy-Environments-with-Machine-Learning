@@ -8,6 +8,7 @@ graph TD
     A --> E[src/]
 
     subgraph src Folder
+        direction TB
         E --> F[analysis.py]
         E --> G[data_processing.py]
         E --> H[model.py]
