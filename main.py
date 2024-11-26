@@ -2,9 +2,9 @@ import argparse
 import torch
 from torch.utils.data import DataLoader
 
-from src.analysis import ForestRecordingAnalyzer, check_and_compare_results
+from src.analysis import ContinuousAudioAnalyzer, check_and_compare_results
 from src.data_processing import AudioDataset, augment_dataset
-from src.model import BirdCallCNN
+from src.model import AudioCNN
 from src.training import train_model, load_dataset, plot_training_history, print_final_metrics
 from src.utils import generate_demo
 
@@ -25,7 +25,7 @@ def train_only(args, device, data_dir):
     test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=4)
     
     # Initialize model
-    model = BirdCallCNN().to(device)
+    model = AudioCNN().to(device)
     
     # Train model
     history = train_model(model, train_loader, val_loader, test_loader, device, 
@@ -40,7 +40,7 @@ def train_only(args, device, data_dir):
 def analyze_only():
     """Function to handle analysis mode"""
     print("Analysis mode selected")
-    analyzer = ForestRecordingAnalyzer('Results/best_model.pth')
+    analyzer = ContinuousAudioAnalyzer('Results/best_model.pth')
     analyzer.analyze_directory('data/Forest Recordings')
 
     metrics = check_and_compare_results('Results/ResultsSummary.csv', 'Results/GroundTruth.csv')

@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 
-class BirdCallCNN(nn.Module):
+class AudioCNN(nn.Module):
     def __init__(self):
-        super(BirdCallCNN, self).__init__()
+        super(AudioCNN, self).__init__()
         
         # Print initial expected input size
         #!print print("Expected input size: [batch_size, 1, 128, 431]")
@@ -44,9 +44,11 @@ class BirdCallCNN(nn.Module):
         
         self.fc_layers = nn.Sequential(
             nn.Linear(self.flatten_features, 256),
+            nn.BatchNorm1d(256),
             nn.ReLU(),
             nn.Dropout(0.5),
             nn.Linear(256, 64),
+            nn.BatchNorm1d(64),
             nn.ReLU(),
             nn.Dropout(0.5),
             nn.Linear(64, 1),

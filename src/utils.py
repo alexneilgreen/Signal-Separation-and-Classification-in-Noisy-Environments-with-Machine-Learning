@@ -58,7 +58,6 @@ def generate_demo():
     
     # Individual augmentations
     augmentations = [
-        ('TimeShifted', time_shift),
         ('PitchShifted', pitch_shift),
         ('TimeStretched', time_stretch),
         ('NoiseAdded', add_noise)
@@ -90,8 +89,7 @@ def generate_demo():
     # Combined augmentations
     combined_aug_waveform = time_stretch(
         pitch_shift(
-            time_shift(
-                add_noise(waveform, sr), sr), sr), sr)
+                add_noise(waveform, sr), sr), sr)
     
     # Combined Waveform plot
     plt.figure(figsize=(10, 4))
@@ -135,7 +133,6 @@ def generate_demo():
     
     # Individual extreme augmentations
     extreme_augmentations = [
-        ('ExtremeTimeShifted', extreme_time_shift),
         ('ExtremePitchShifted', extreme_pitch_shift),
         ('ExteremeTimeStretched', extreme_time_stretch),
         ('ExteremeNoiseAdded', extreme_add_noise)
@@ -167,8 +164,7 @@ def generate_demo():
     # Combined augmentations
     combined_aug_waveform = extreme_time_stretch(
         extreme_pitch_shift(
-            extreme_time_shift(
-                extreme_add_noise(waveform, sr), sr), sr), sr)
+                extreme_add_noise(waveform, sr), sr), sr)
     
     # Combined Waveform plot
     plt.figure(figsize=(10, 4))

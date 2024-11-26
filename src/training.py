@@ -85,7 +85,10 @@ def evaluate_model(model, data_loader, criterion, device):
 
 def train_model(model, train_loader, val_loader, test_loader, device, num_epochs=50, learning_rate=0.001):
     criterion = nn.BCELoss()
-    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+    optimizer = optim.Adam(
+        model.parameters(), 
+        lr=learning_rate
+    )
 
     # Enhanced scheduler with more parameters
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(

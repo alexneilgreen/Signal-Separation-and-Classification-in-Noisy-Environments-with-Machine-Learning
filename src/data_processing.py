@@ -144,7 +144,7 @@ def process_directory(input_path, output_path):
             waveform, sr = librosa.load(input_file, sr=22050)
             
             # Apply random augmentation
-            augmentation_funcs = [time_shift, pitch_shift, time_stretch, add_noise]
+            augmentation_funcs = [pitch_shift, time_stretch, add_noise]     # Time shift wound up making results worse.
             aug_func = random.choice(augmentation_funcs)
             augmented_waveform = aug_func(waveform, sr)
             

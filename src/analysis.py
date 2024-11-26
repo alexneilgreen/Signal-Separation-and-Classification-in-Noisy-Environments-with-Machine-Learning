@@ -11,9 +11,9 @@ from sklearn.metrics import (
     r2_score
 )
 
-from .model import BirdCallCNN
+from .model import AudioCNN
 
-class BirdCall:
+class AudioTarget:
     def __init__(self, start_time, end_time=None, confidence=None):
         self.start_time = start_time
         self.end_time = end_time if end_time is not None else start_time
@@ -31,10 +31,10 @@ class BirdCall:
     def average_confidence(self):
         return sum(self.confidences) / len(self.confidences) if self.confidences else None
 
-class ForestRecordingAnalyzer:
+class ContinuousAudioAnalyzer:
     def __init__(self, model_path, device='cuda' if torch.cuda.is_available() else 'cpu'):
         self.device = device
-        self.model = BirdCallCNN().to(device)
+        self.model = AudioCNN().to(device)
         self.model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
         self.model.eval()
         
@@ -94,11 +94,11 @@ class ForestRecordingAnalyzer:
         
         for time, confidence in sorted(detections):
             if current_call is None:
-                current_call = BirdCall(time, confidence=confidence)
+                current_call = AudioTarget(time, confidence=confidence)
             elif time - current_call.end_time > self.min_gap:
                 if current_call.duration > 0:                       # Only append the current call if it has non-zero duration
                     grouped_calls.append(current_call)
-                current_call = BirdCall(time, confidence=confidence)
+                current_call = AudioTarget(time, confidence=confidence)
             else:
                 current_call.extend_call(time, confidence)
         

@@ -26,16 +26,21 @@ graph TD
         E --> J[utils.py]
     end
 
-    F --> |Contains| BFA[ForestRecordingAnalyzer]
+    F --> |Contains| BFA[AudioTarget]
+    F --> |Contains| BFA[ContinuousAudioAnalyzer]
+    F --> |Contains| BFB[compare_results]
     F --> |Contains| BFB[check_and_compare_results]
 
     G --> |Contains| CDA[AudioDataset]
     G --> |Contains| CDB[augment_dataset]
+    G --> |Contains| CDB[process_directory]
 
-    H --> |Contains| DBM[BirdCallCNN]
+    H --> |Contains| DBM[AudioCNN]
 
-    I --> |Contains| EFT[train_model]
+    I --> |Contains| EFT[ErrorMetrics]
     I --> |Contains| EFL[load_dataset]
+    I --> |Contains| EFT[evaluate_model]
+    I --> |Contains| EFT[train_model]
     I --> |Contains| EFP[plot_training_history]
     I --> |Contains| EFM[print_final_metrics]
 
