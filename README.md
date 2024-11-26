@@ -2,43 +2,37 @@
 graph TD
     A[main.py]
 
-    subgraph Src Folder
-        B[analysis.py]
-        C[data_processing.py]
-        D[model.py]
-        E[training.py]
-        F[utils.py]
+    subgraph Project Structure
+        B[Data/]
+        C[Figures/]
+        D[Results/]
     end
 
     A --> B
     A --> C
     A --> D
-    A --> E
-    A --> F
 
-    subgraph Project Structure
-        G[Data/]
-        H[Figures/]
-        I[Results/]
-    end
+    A --> E[src/]
 
-    A --> G
-    A --> H
-    A --> I
+    E --> F[analysis.py]
+    E --> G[data_processing.py]
+    E --> H[model.py]
+    E --> I[training.py]
+    E --> J[utils.py]
 
-    B --> |Contains| BFA[ForestRecordingAnalyzer]
-    B --> |Contains| BFB[check_and_compare_results]
+    F --> |Contains| BFA[ForestRecordingAnalyzer]
+    F --> |Contains| BFB[check_and_compare_results]
 
-    C --> |Contains| CDA[AudioDataset]
-    C --> |Contains| CDB[augment_dataset]
+    G --> |Contains| CDA[AudioDataset]
+    G --> |Contains| CDB[augment_dataset]
 
-    D --> |Contains| DBM[BirdCallCNN]
+    H --> |Contains| DBM[BirdCallCNN]
 
-    E --> |Contains| EFT[train_model]
-    E --> |Contains| EFL[load_dataset]
-    E --> |Contains| EFP[plot_training_history]
-    E --> |Contains| EFM[print_final_metrics]
+    I --> |Contains| EFT[train_model]
+    I --> |Contains| EFL[load_dataset]
+    I --> |Contains| EFP[plot_training_history]
+    I --> |Contains| EFM[print_final_metrics]
 
-    F --> |Contains| FGD[generate_demo]
+    J --> |Contains| FGD[generate_demo]
     ```
 ````
