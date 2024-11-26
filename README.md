@@ -1,4 +1,4 @@
-````mermaid
+```mermaid
 graph TD
     A[main.py]
 
@@ -6,13 +6,14 @@ graph TD
         B[Data/]
         C[Figures/]
         D[Results/]
+        E[src/]
     end
 
     A --> B
     A --> C
     A --> D
 
-    A --> E[src/]
+    A --> E
 
     E --> F[analysis.py]
     E --> G[data_processing.py]
@@ -34,5 +35,4 @@ graph TD
     I --> |Contains| EFM[print_final_metrics]
 
     J --> |Contains| FGD[generate_demo]
-    ```
-````
+```
