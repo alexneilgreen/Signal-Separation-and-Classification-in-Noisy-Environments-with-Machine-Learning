@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import (
@@ -150,15 +151,14 @@ def train_model(model, train_loader, val_loader, test_loader, device, num_epochs
 
         current_lr = optimizer.param_groups[0]['lr']
         
-        # print(f'Epoch [{epoch + 1}/{num_epochs}]')
+        print(f'Epoch {epoch + 1}/{num_epochs} '+ ('-' * 100))
         print(f'Current Learning Rate:\t{current_lr:.6f}')
         print(f'Ein (Training Error):\t{train_results["loss"]:.6f}')
         print(f'Eval (Validation Error):{val_results["loss"]:.6f}')
         print(f'Eout (Test Error):\t{test_results["loss"]:.6f}')
         print(f'Training Accuracy:\t{train_results["accuracy"]:.6f}')
         print(f'Validation Accuracy:\t{val_results["accuracy"]:.6f}')
-        print(f'Test Accuracy:\t\t{test_results["accuracy"]:.6f}')
-        print('\n' + ('-' * 100))
+        print(f'Test Accuracy:\t\t{test_results["accuracy"]:.6f}\n')
     
     return history
 
@@ -190,7 +190,7 @@ def plot_training_history(history):
     plt.legend()
     
     plt.tight_layout()
-    plt.savefig('Results/TrainingHistory.png')
+    plt.savefig('Results/1.TrainingHistory.png')
     plt.close()
 
 def print_final_metrics(history):
@@ -215,3 +215,59 @@ def print_final_metrics(history):
     print("\nTest:")
     for metric, value in history['test_metrics'][final_epoch].items():
         print(f"\t{metric}: {value:.6f}")
+    
+    # Visualize final metrics
+    plt.figure(figsize=(18, 6))
+    
+    # Prepare data for plotting
+    sets = ['Training', 'Validation', 'Test']
+    metrics_to_plot = ['loss', 'accuracy', 'precision', 'recall', 'f1']
+    colors = ['blue', 'orange', 'green']
+    
+    # Create a horizontal bar plot for each metric
+    for i, metric in enumerate(metrics_to_plot, 1):
+        plt.subplot(1, 5, i)
+        values = [
+            history['train_metrics'][final_epoch][metric],
+            history['val_metrics'][final_epoch][metric],
+            history['test_metrics'][final_epoch][metric]
+        ]
+        bars = plt.barh(range(len(sets)), values, color=colors, tick_label=sets)
+        
+        # Make titles larger and bold
+        plt.title(metric.capitalize(), fontsize=16, fontweight='bold')
+        plt.xlim(0, 1)
+        plt.yticks([])  # Remove y-axis labels
+        
+        # Customize text placement and formatting
+        for j, bar in enumerate(bars):
+            width = bar.get_width()
+            # For loss, place text on the right; for others, center
+            if metric == 'loss':
+                plt.text(width, bar.get_y() + bar.get_height() / 2, 
+                         f'{width:.6f}', 
+                         ha='left', va='center', fontsize=12, fontweight='bold')
+            else:
+                plt.text(width / 2, bar.get_y() + bar.get_height() / 2, 
+                         f'{width:.6f}', 
+                         ha='center', va='center', fontsize=12, fontweight='bold', color='white')
+    
+    # Key (Legend)
+    legend_elements = [
+        Patch(facecolor='blue', edgecolor='black', label='Training Data'),
+        Patch(facecolor='orange', edgecolor='black', label='Validation Data'),
+        Patch(facecolor='green', edgecolor='black', label='Testing Data')
+    ]
+
+    # Position the legend below the entire figure
+    plt.legend(
+        handles=legend_elements,
+        loc='upper center',  # Place legend at the top of the extra space
+        bbox_to_anchor=(0.5, -0.15),  # Centered below the figure
+        fontsize=12
+    )
+
+    # Adjust layout to make space for the legend
+    plt.tight_layout()
+    plt.savefig('Results/2.FinalMetrics.png')
+    plt.close()

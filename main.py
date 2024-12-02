@@ -7,6 +7,7 @@ from src.data_processing import AudioDataset, augment_dataset
 from src.model import AudioCNN
 from src.training import train_model, load_dataset, plot_training_history, print_final_metrics
 from src.utils import generate_demo
+from src.logging_module import setup_logging
 
 def train_only(args, device, data_dir):
     """Function to handle training mode"""
@@ -65,6 +66,8 @@ def main():
                       help='Use augmented dataset: T (True) or F (False)')
     
     args = parser.parse_args()
+    
+    setup_logging()
     
     # Set device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

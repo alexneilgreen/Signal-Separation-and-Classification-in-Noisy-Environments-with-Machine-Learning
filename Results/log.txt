@@ -1,0 +1,502 @@
+
+Using device: cuda
+
+Using Augmented Dataset
+	Augmented dataset already exists. Skipping augmentation.
+
+Full Pipeline mode selected
+
+	Training set size: 1133
+	Validation set size: 244
+	Test set size: 243
+
+Epoch 1/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.286531
+Eval (Validation Error):0.358308
+Eout (Test Error):	0.331328
+Training Accuracy:	0.956752
+Validation Accuracy:	0.831967
+Test Accuracy:		0.897119
+
+Epoch 2/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.140942
+Eval (Validation Error):0.139108
+Eout (Test Error):	0.129528
+Training Accuracy:	0.984996
+Validation Accuracy:	0.991803
+Test Accuracy:		0.995885
+
+Epoch 3/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.078263
+Eval (Validation Error):0.070363
+Eout (Test Error):	0.066162
+Training Accuracy:	0.997352
+Validation Accuracy:	0.995902
+Test Accuracy:		0.995885
+
+Epoch 4/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.050797
+Eval (Validation Error):0.034359
+Eout (Test Error):	0.035328
+Training Accuracy:	0.996470
+Validation Accuracy:	0.995902
+Test Accuracy:		0.995885
+
+Epoch 5/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.038721
+Eval (Validation Error):0.035158
+Eout (Test Error):	0.029836
+Training Accuracy:	0.998235
+Validation Accuracy:	0.995902
+Test Accuracy:		0.995885
+
+Epoch 6/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.025051
+Eval (Validation Error):0.020938
+Eout (Test Error):	0.021965
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		0.995885
+
+Epoch 7/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.024750
+Eval (Validation Error):0.028864
+Eout (Test Error):	0.016164
+Training Accuracy:	0.997352
+Validation Accuracy:	0.991803
+Test Accuracy:		0.995885
+
+Epoch 8/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.017467
+Eval (Validation Error):0.014866
+Eout (Test Error):	0.011868
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 9/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.019333
+Eval (Validation Error):0.016683
+Eout (Test Error):	0.012763
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 10/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.019388
+Eval (Validation Error):0.011110
+Eout (Test Error):	0.009439
+Training Accuracy:	0.997352
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 11/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.014854
+Eval (Validation Error):0.007030
+Eout (Test Error):	0.006889
+Training Accuracy:	0.996470
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 12/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.010087
+Eval (Validation Error):0.005280
+Eout (Test Error):	0.003698
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 13/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.009068
+Eval (Validation Error):0.010520
+Eout (Test Error):	0.006419
+Training Accuracy:	0.999117
+Validation Accuracy:	0.995902
+Test Accuracy:		0.995885
+
+Epoch 14/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.007786
+Eval (Validation Error):0.003240
+Eout (Test Error):	0.003217
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 15/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.007698
+Eval (Validation Error):0.006539
+Eout (Test Error):	0.004687
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 16/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.001000
+Ein (Training Error):	0.006816
+Eval (Validation Error):0.003405
+Eout (Test Error):	0.003188
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 17/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000100
+Ein (Training Error):	0.010236
+Eval (Validation Error):0.004046
+Eout (Test Error):	0.004271
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 18/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000100
+Ein (Training Error):	0.011993
+Eval (Validation Error):0.003065
+Eout (Test Error):	0.002901
+Training Accuracy:	0.997352
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 19/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000100
+Ein (Training Error):	0.008683
+Eval (Validation Error):0.002841
+Eout (Test Error):	0.002744
+Training Accuracy:	0.997352
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 20/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000100
+Ein (Training Error):	0.006287
+Eval (Validation Error):0.003439
+Eout (Test Error):	0.003135
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 21/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000100
+Ein (Training Error):	0.003888
+Eval (Validation Error):0.002961
+Eout (Test Error):	0.002781
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 22/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000010
+Ein (Training Error):	0.005255
+Eval (Validation Error):0.002899
+Eout (Test Error):	0.002714
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 23/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000010
+Ein (Training Error):	0.004159
+Eval (Validation Error):0.003231
+Eout (Test Error):	0.003007
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 24/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000010
+Ein (Training Error):	0.003562
+Eval (Validation Error):0.003201
+Eout (Test Error):	0.003105
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 25/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000010
+Ein (Training Error):	0.010109
+Eval (Validation Error):0.003181
+Eout (Test Error):	0.003065
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 26/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.013581
+Eval (Validation Error):0.002985
+Eout (Test Error):	0.002684
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 27/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.004616
+Eval (Validation Error):0.002843
+Eout (Test Error):	0.002645
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 28/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.007855
+Eval (Validation Error):0.002900
+Eout (Test Error):	0.002655
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 29/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.005742
+Eval (Validation Error):0.002892
+Eout (Test Error):	0.002598
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 30/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.004285
+Eval (Validation Error):0.003196
+Eout (Test Error):	0.002968
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 31/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.005165
+Eval (Validation Error):0.003107
+Eout (Test Error):	0.002892
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 32/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.004284
+Eval (Validation Error):0.002854
+Eout (Test Error):	0.002639
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 33/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.005732
+Eval (Validation Error):0.002839
+Eout (Test Error):	0.002645
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 34/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.004069
+Eval (Validation Error):0.003072
+Eout (Test Error):	0.002681
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 35/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.006141
+Eval (Validation Error):0.003069
+Eout (Test Error):	0.002752
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 36/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.005111
+Eval (Validation Error):0.002928
+Eout (Test Error):	0.002733
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 37/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.003953
+Eval (Validation Error):0.003018
+Eout (Test Error):	0.002790
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 38/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.006250
+Eval (Validation Error):0.003044
+Eout (Test Error):	0.002876
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 39/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.006685
+Eval (Validation Error):0.004116
+Eout (Test Error):	0.003273
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 40/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.005115
+Eval (Validation Error):0.003134
+Eout (Test Error):	0.002945
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 41/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.003552
+Eval (Validation Error):0.003053
+Eout (Test Error):	0.002810
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 42/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.006622
+Eval (Validation Error):0.003083
+Eout (Test Error):	0.002738
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 43/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.006933
+Eval (Validation Error):0.002983
+Eout (Test Error):	0.002815
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 44/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.004276
+Eval (Validation Error):0.003134
+Eout (Test Error):	0.002727
+Training Accuracy:	0.999117
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 45/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.007395
+Eval (Validation Error):0.003825
+Eout (Test Error):	0.003078
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 46/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.007943
+Eval (Validation Error):0.003360
+Eout (Test Error):	0.003353
+Training Accuracy:	0.998235
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 47/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.003480
+Eval (Validation Error):0.003085
+Eout (Test Error):	0.002780
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 48/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.004029
+Eval (Validation Error):0.003125
+Eout (Test Error):	0.002866
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 49/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.004004
+Eval (Validation Error):0.003243
+Eout (Test Error):	0.002803
+Training Accuracy:	1.000000
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+Epoch 50/50 ----------------------------------------------------------------------------------------------------
+Current Learning Rate:	0.000001
+Ein (Training Error):	0.010968
+Eval (Validation Error):0.003362
+Eout (Test Error):	0.002942
+Training Accuracy:	0.997352
+Validation Accuracy:	1.000000
+Test Accuracy:		1.000000
+
+
+Final Model Metrics:
+----------------------------------------------------------------------------------------------------
+Error Metrics:
+	Ein (Training Error):	0.010968
+	Eval (Validation Error):0.003362
+	Eout (Test Error):	0.002942
+
+Detailed Metrics:
+
+Training:
+	loss: 0.010968
+	accuracy: 0.997352
+	precision: 0.990228
+	recall: 1.000000
+	f1: 0.995090
+
+Validation:
+	loss: 0.003362
+	accuracy: 1.000000
+	precision: 1.000000
+	recall: 1.000000
+	f1: 1.000000
+
+Test:
+	loss: 0.002942
+	accuracy: 1.000000
+	precision: 1.000000
+	recall: 1.000000
+	f1: 1.000000
+Analysis mode selected
+Found 100 audio files to analyze
+Detailed results saved to Results/Results.csv
+Summary results saved to Results/ResultsSummary.csv
+Files found. Proceeding with comparison...
+
+Results:
+MAE: 1.90
+RMSE: 3.62
+R²: 0.488

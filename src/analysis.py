@@ -273,7 +273,7 @@ def compare_results(results_path, ground_truth_path):
     results_dir.mkdir(exist_ok=True)
     
     # Save the figure in the Results folder
-    plt.savefig(results_dir / 'ModelResultsAccuracy.png', dpi=300, bbox_inches='tight')
+    plt.savefig(results_dir / '3.ModelResultsAccuracy.png', dpi=300, bbox_inches='tight')
     plt.close()
     
     return mae, rmse, r2
