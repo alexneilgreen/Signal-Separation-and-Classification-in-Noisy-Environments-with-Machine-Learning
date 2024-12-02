@@ -22,9 +22,16 @@ graph TD
         E --> F[analysis.py]
         E --> G[data_processing.py]
         E --> H[model.py]
+        E --> H[logging_module.py]
         E --> I[training.py]
         E --> J[utils.py]
     end
+```
+
+```mermaid
+graph TD
+    F[analysis.py]
+    G[data_processing.py]
 
     F --> |Contains| BFA[AudioTarget]
     F --> |Contains| BFA[ContinuousAudioAnalyzer]
@@ -34,6 +41,13 @@ graph TD
     G --> |Contains| CDA[AudioDataset]
     G --> |Contains| CDB[augment_dataset]
     G --> |Contains| CDB[process_directory]
+```
+
+```mermaid
+graph TD
+    H[logging_module.py]
+    I[training.py]
+    J[utils.py]
 
     H --> |Contains| DBM[AudioCNN]
 
