@@ -22,9 +22,9 @@ graph TD
         E --> F[analysis.py]
         E --> G[data_processing.py]
         E --> H[model.py]
-        E --> H[logging_module.py]
-        E --> I[training.py]
-        E --> J[utils.py]
+        E --> I[logging_module.py]
+        E --> J[training.py]
+        E --> K[utils.py]
     end
 ```
 
@@ -32,33 +32,36 @@ graph TD
 graph TD
     F[analysis.py]
     G[data_processing.py]
+    H[model.py]
 
-    F --> |Contains| BFA[AudioTarget]
-    F --> |Contains| BFA[ContinuousAudioAnalyzer]
-    F --> |Contains| BFB[compare_results]
-    F --> |Contains| BFB[check_and_compare_results]
+    F --> |Contains| FA[AudioTarget]
+    F --> |Contains| FB[ContinuousAudioAnalyzer]
+    F --> |Contains| FC[compare_results]
+    F --> |Contains| FD[check_and_compare_results]
 
-    G --> |Contains| CDA[AudioDataset]
-    G --> |Contains| CDB[augment_dataset]
-    G --> |Contains| CDB[process_directory]
+    G --> |Contains| GA[AudioDataset]
+    G --> |Contains| GB[augment_dataset]
+    G --> |Contains| GC[process_directory]
+
+    H --> |Contains| HA[AudioCNN]
 ```
 
 ```mermaid
 graph TD
-    H[logging_module.py]
-    I[training.py]
-    J[utils.py]
+    I[logging_module.py]
+    J[training.py]
+    K[utils.py]
 
-    H --> |Contains| DBM[AudioCNN]
+    I --> |Contains| IA[Logger Writer]
 
-    I --> |Contains| EFT[ErrorMetrics]
-    I --> |Contains| EFL[load_dataset]
-    I --> |Contains| EFT[evaluate_model]
-    I --> |Contains| EFT[train_model]
-    I --> |Contains| EFP[plot_training_history]
-    I --> |Contains| EFM[print_final_metrics]
+    J --> |Contains| JA[ErrorMetrics]
+    J --> |Contains| JB[load_dataset]
+    J --> |Contains| JC[evaluate_model]
+    J --> |Contains| JD[train_model]
+    J --> |Contains| JE[plot_training_history]
+    J --> |Contains| JF[print_final_metrics]
 
-    J --> |Contains| FGD[generate_demo]
+    K --> |Contains| KA[generate_demo]
 ```
 
 ## How to Run the Project
